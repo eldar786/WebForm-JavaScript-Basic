@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Forma</title>
+    <meta charset="utf-8" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="Script.js"></script>
+    <title></title>
+
+</head>
+<body>
+    <h1>Formular za prijavu</h1>
+    <h4>Ukoliko želite biti dodani na našu mailing listu, molimo da popunite sljedeću formu.</h4>
+    <form method="post" action="zahtjev.asp">
+        <input type="hidden" name="primalac" value="eldarbaj@mail.com" />
+        <table>
+            <tr>
+                <td><span>E-mail adresa:</span></td>
+                <td><input name="email" size="30" maxlength="50" type="text" /></td>
+            </tr>
+            <tr>
+                <td><span>Ime:</span></td>
+                <td><input id="ime" name="ime" size="30" maxlength="50" type="text" onblur="validateInput(this);" /></td>
+            </tr>
+            <tr>
+                <td><span>Lozinka:</span></td>
+                <td><input type="password" size="20" onblur="validateInput(this)" /></td>
+            </tr>
+            <tr>
+                <td><span>Informacije koje bi ste voljeli primati na mail:</span></td>
+                <td><textarea name="informacije" rows="4" cols="40"></textarea></td>
+            </tr>
+            <tr>
+                <td><b><span>Kategorije za koje ste zainteresovani:</span> </b></td>
+                <td>
+                    <input type="checkbox" name="wp" />Web programiranje
+                    <br />
+                    <input type="checkbox" name="gd" />Grafički dizajn
+                    <br />
+                    <input type="checkbox" name="rm" />Računarske mreže
+                    <br />
+                    <input type="checkbox" name="si" />Softverski inženjering
+                </td>
+            </tr>
+            <tr>
+            <tr>
+                <td>
+                    <span>Spol:</span>
+                </td>
+                <td>
+                    <input id="muški" type="radio" name="spol" value="m" checked /> <label for="radio1"> Muški </label>
+                    <input id="ženski" type="radio" name="spol" value="f" /> <label for="radio2"> Ženski </label>
+                </td>
+            </tr>
+            <tr>
+                <td><span>Diploma koju posjedujete:</span></td>
+                <td>
+                    <select name="rating">
+                        <option>***Odaberite***</option>
+                        <option>Americki Univerzitet</option>
+                        <option>FIT</option>
+                        <option>ETF</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" value="Sačuvaj" class="error" /></td>
+            </tr>
+        </table>
+
+    </form>
+</body>
+</html>

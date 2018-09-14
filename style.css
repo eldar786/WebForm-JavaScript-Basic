@@ -1,0 +1,50 @@
+﻿body
+{
+    font-family: Cambria;
+    font-size: 14px;
+    margin: 0 auto;
+    width: 900px;
+}
+h1 {
+    text-align: center;
+}
+tr {
+    background-color: #e7eef6;
+}
+td{
+    width: 450px;
+    padding: 5px;
+}
+textarea{
+    resize: none;
+    height: 100px !important;
+}
+
+span{
+    float: right;
+}
+
+input[type=submit] {
+    font-weight: bold;
+    margin-top: 10px;
+    border: none;
+    padding: 3px;
+    cursor: pointer;
+    background-color: ActiveCaption;
+    color: white;
+}
+
+input[type=submit]:hover {
+    opacity:initial;
+}
+
+input[type=text], input[type=password], textarea{
+    text-indent: 10px;
+    height: 25px;
+    border: solid 1px #97aabf;
+    border-radius: 7px;
+}
+
+.error{
+    border-color: red !important;
+}
